@@ -21,9 +21,11 @@ To Run a dist version
 
 * Moved scripts to the end of the pages
 * Minified JS files and concatenated into a single file
-* Minified CSS files and concatenated into a single file
+* Minified CSS files, concatenated and 'inlined it
+* Removed google foont
 * Minified HTML files
 * Optimized images
+* Replaced `queryAll` and `querySelectorAll` with the more specific query selection methods: `getElementById` and `getElementsByClassNames`
 * Created servers with gulp
 * Integrated ngrok
 

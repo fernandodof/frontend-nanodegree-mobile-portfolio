@@ -79,7 +79,7 @@ gulp.task('imagemin-global', function() {
 gulp.task('usemin-index', function() {
     return gulp.src(paths.index)
         .pipe(usemin({
-            css: [cleanCSS({
+            inlinecss: [cleanCSS({
                 compatibility: 'ie8'
             }), 'concat'],
             html: [htmlmin({
@@ -95,7 +95,7 @@ gulp.task('usemin-index', function() {
 gulp.task('usemin-project2048', function() {
     return gulp.src(paths.project2048)
         .pipe(usemin({
-            css: [cleanCSS({
+            inlinecss: [cleanCSS({
                 compatibility: 'ie8'
             }), 'concat'],
             html: [htmlmin({
@@ -111,7 +111,7 @@ gulp.task('usemin-project2048', function() {
 gulp.task('usemin-projectMobile', function() {
     return gulp.src(paths.projectMobile)
         .pipe(usemin({
-            css: [cleanCSS({
+            inlinecss: [cleanCSS({
                 compatibility: 'ie8'
             }), 'concat'],
             html: [htmlmin({
@@ -127,7 +127,7 @@ gulp.task('usemin-projectMobile', function() {
 gulp.task('usemin-projectWebperf', function() {
     return gulp.src(paths.projectWebperf)
         .pipe(usemin({
-            css: [cleanCSS({
+            inlinecss: [cleanCSS({
                 compatibility: 'ie8'
             }), 'concat'],
             html: [htmlmin({

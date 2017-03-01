@@ -8,10 +8,11 @@
     <title>Cameron Pittman: Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Removed font, the page still look good without it -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
 
     <!-- Used by gulp to minify and concatenate css files -->
-    <!--build:css css/styles.css -->
+    <!--build:inlinecss css/styles.css -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
     <!-- endbuild -->
@@ -49,7 +50,7 @@
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" src="views/images/pizzeria-min-index.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
@@ -70,7 +71,7 @@
     </script>
     <script src="http://www.google-analytics.com/analytics.js" async></script>
     <!--build:js js/scripts.js -->
-    <script async src="js/perfmatters.js" async></script>
+    <script src="js/perfmatters.js" async></script>
      <!-- endbuild -->
   </body>
 </html>
